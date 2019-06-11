@@ -6,4 +6,15 @@
       <class name="com.TestExecution.TestRunner"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.TestExecution.TestRunner">
+        <methods>
+          <include name="screenshotattachtoreport"/>
+          <include name="Firstexecution"/>
+          <include name="StartExecution"/>
+        </methods>
+      </class> <!-- com.TestExecution.TestRunner -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

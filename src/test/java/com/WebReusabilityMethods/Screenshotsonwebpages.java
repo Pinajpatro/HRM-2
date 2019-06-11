@@ -13,10 +13,10 @@ import org.openqa.selenium.io.FileHandler;
 
 public class Screenshotsonwebpages {
 	
-	public String getscreenshots(WebDriver driver,String Name) {
+	public static String getscreenshots(WebDriver driver) {
 		TakesScreenshot tc = (TakesScreenshot)driver;
 		File source = tc.getScreenshotAs(OutputType.FILE);
-		String screenshotpath = "C:\\Users\\Pinaj\\Eclipse Project\\OpsVedaAutomation\\Screenshots" +Name+".png";
+		String screenshotpath = "C:\\Users\\Pinaj\\Eclipse Project\\OpsVedaAutomation\\Screenshots\\" +getsystemdatetime()+".png";
 		try {
 			FileHandler.copy(source, new File(screenshotpath));
 		} catch (IOException e) {

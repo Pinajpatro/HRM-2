@@ -16,7 +16,8 @@ public class InitialClass extends Baseclass{
 		if(Browser.equals("Chrome")) {
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Pinaj\\Eclipse Project\\OpsVedaAutomation\\BrowserDriver\\chromedriver.exe");
 			 driver = new ChromeDriver();
-			driver.manage().window().maximize();
+			 driver.manage().window().maximize();
+			 driver.manage().deleteAllCookies();
 			/*ChromeOptions options = new ChromeOptions();
 			options.addArguments("--incognito");
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
